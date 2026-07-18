@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f4ef" />
+    <meta name="author" content="Ishita" />
+
+    <title>Ishita — Product Designer</title>
+    <meta
+      name="description"
+      content="Ishita — Product Designer with 2+ years crafting user-first digital products. Selected work and experience."
+    />
+
+    <!-- Social share preview (Open Graph + Twitter). After deploy, uncomment
+         og:url and og:image with your real domain and a 1200×630 image, then
+         switch twitter:card to "summary_large_image". -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ishita — Portfolio" />
+    <meta property="og:title" content="Ishita — Product Designer" />
+    <meta
+      property="og:description"
+      content="Product Designer with 2+ years crafting user-first digital products. Selected work and experience."
+    />
+    <!-- <meta property="og:url" content="https://your-domain.com/" /> -->
+    <!-- <meta property="og:image" content="https://your-domain.com/images/og-cover.png" /> -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Ishita — Product Designer" />
+    <meta
+      name="twitter:description"
+      content="Product Designer with 2+ years crafting user-first digital products."
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Apply the saved (or OS-preferred) theme before first paint.
+      try {
+        var t = localStorage.getItem('theme')
+        if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.dataset.theme = 'dark'
+        }
+      } catch (e) {}
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
