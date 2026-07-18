@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "npm run build && git add docs && git commit -m \"Publish site\" && git push",
     "preview": "vite preview",
     "optimize-images": "node scripts/optimize-images.mjs"
   },
